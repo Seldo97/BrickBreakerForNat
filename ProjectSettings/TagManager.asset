@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - BottomWall
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Brick
   - Wall
   - Ball
-  - 
+  - Effects
   - 
   - 
   - 
@@ -53,4 +54,7 @@ TagManager:
     locked: 0
   - name: Brick
     uniqueID: 3140841853
+    locked: 0
+  - name: Effects
+    uniqueID: 1129524693
     locked: 0
