@@ -17,10 +17,10 @@ public class Ball : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (!this.inPlay) {
-            transform.position = playerTransform.position;
+            this.transform.position = playerTransform.position;
         }
 
-        if (Input.GetButtonDown("Jump")) {
+        if (Input.GetButtonDown("Jump") && !this.inPlay) {
             this.setBallInPlay();
         }
     }
@@ -32,7 +32,7 @@ public class Ball : MonoBehaviour {
     }
 
     public void resetBall() {
-        ballRigidbody.velocity = Vector2.zero;
+        this.ballRigidbody.velocity = Vector2.zero;
         this.inPlay = false;
     }
 
